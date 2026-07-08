@@ -2,6 +2,11 @@
 
 **CampusPilot** is an AI-powered college assistant that answers student queries on academics, fees, and general topics using a **LangGraph-based conditional RAG pipeline**. It classifies each incoming query, routes it to the correct knowledge source (academic handbook or fee structure document), retrieves relevant context using FAISS similarity search, and generates a personalized response based on the student's programme (BCA / BBA / B.Com (H)). The project ships with a modern, dark-themed **Streamlit** frontend built to feel like a production-grade app rather than a typical prototype UI.
 
+## 🌐 Live Demo
+
+🔗 **[CampusPilot live](https://campuspilot-agentic-student-support-system-bhrka626bfsixudszm9.streamlit.app/)**
+
+> Note: The app may take a few seconds to wake up if it has been inactive, as Streamlit Community Cloud puts idle apps to sleep after 12 hours.
 ---
 
 ## 📌 Table of Contents
