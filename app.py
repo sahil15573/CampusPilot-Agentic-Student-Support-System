@@ -50,6 +50,25 @@ st.markdown(
     /* Hide default streamlit chrome */
     #MainMenu, footer, header {visibility: hidden;}
 
+    /* ---------- Force sidebar to stay permanently open, no collapse toggle ---------- */
+    [data-testid="collapsedControl"] {
+        display: none !important;
+    }
+    button[data-testid="baseButton-headerNoPadding"] {
+        display: none !important;
+    }
+    section[data-testid="stSidebar"] {
+        min-width: 300px !important;
+        max-width: 300px !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+    section[data-testid="stSidebar"][aria-expanded="false"] {
+        min-width: 300px !important;
+        max-width: 300px !important;
+        margin-left: 0px !important;
+    }
+
     /* ---------- Sidebar ---------- */
     section[data-testid="stSidebar"] {
         background: linear-gradient(180deg, #10131f 0%, #0b0e18 100%);
